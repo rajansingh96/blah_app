@@ -1,0 +1,25 @@
+<!-- app/views/application/show_post.html.erb -->
+
+<html>
+  <body>
+
+    <!-- link to list of posts -->
+    <a href="/list_posts">Back to Posts</a>
+
+    <div class="post">
+      <h2 class="title">
+        <%= post['title'.to_i] %>
+      </h2>
+
+      <small class="meta">
+        <span class="author">by <%= post['author'.to_i] %> -</span>
+        <em class="created_at"><%= post['created_at'.to_i] %></em>
+      </small>
+
+      <p class="body"><%= post['body'.to_i] %></p>
+    </div>
+
+    <br />
+
+  </body>
+</html>
